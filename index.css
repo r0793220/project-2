@@ -1,0 +1,93 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-image: url(/images/achtergrond.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  font-family: 'Calibri';
+}
+
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding-left: 50px;
+  overflow: hidden;
+  text-align: center;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 20px;
+  padding-bottom: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: large;
+}
+
+li a:hover:not(.active) {
+  border-bottom-style: solid;
+  border-color: white;
+}
+
+li .active{
+  border-bottom-style: solid;
+  border-color: white;
+}
+
+.container {
+  display: block;
+  color: rgb(64,64,64);
+  position: absolute;
+  bottom: 22%;
+  left: 33%;
+}
+
+.hoofd {
+  border-bottom-style: solid;
+  border-width: 5px;
+  border-color: rgb(217,82,57) ;
+  font-size: 2.5rem;
+  margin: 0;
+  padding: 0;
+}
+
+.text {
+  font-size: 1.75rem;
+}
+
+h1 {
+  margin: 0;
+  padding: 0;
+  font-weight: bold;
+}
+
+.contact {
+  background-color: rgb(217,82,57);
+  border-style: none;
+  border-radius: 5px;
+  font-size: 1.175rem;
+  font-weight: bold;
+  margin: 15px 0px;
+  padding: 8px 25px;
+  display: inline-block;
+}
+
+.contact:hover {
+background-color: rgb(170, 63, 44);
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+span {
+  color: rgb(217,82,57);
+}

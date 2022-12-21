@@ -1,0 +1,268 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  
+}
+
+:root {
+  --clr-rood: rgb(217,82,57);
+  --clr-rood-hover: rgb(170, 63, 44);
+  --clr-grijs:rgb(64,64,64);
+  --fw-header: bold;
+}
+
+body{
+  font-family: 'Calibri';
+  margin: 0;
+  padding: 0;
+  color: var(--clr-grijs);
+  height: 100vh;
+    align-items: center;
+  
+}
+
+span {
+  color: var(--clr-rood);
+}
+
+.span-cv, .span-erv{
+  font-weight: bold;
+  font-size: larger;
+}
+
+h1 {
+  color: var(--clr-grijs);
+  font-weight: var(--fw-header);
+  margin: auto;
+  text-align: center;
+  padding-top: 25px;
+}
+
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  background-color: var(--clr-rood);
+  text-align: center;
+}
+
+li {
+  display: inline-block;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 20px;
+  padding-bottom: 20px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: large;
+}
+
+li a:hover, li .active{
+  text-decoration: underline white;
+}
+
+.cv-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 400px;
+}
+
+.cv-tekst {
+  border-style: solid;
+  border-width: 3px;
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  position: relative;
+  padding:80px;
+}
+
+.cv-onder {
+  padding-top: 40px;
+}
+
+.cv-onder, .cv-boven{
+  font-size: 1.2rem;
+}
+
+.cartoon-diploma {
+  position: absolute;
+  left: 20%;
+  top: 15%;
+  z-index: 1;
+}
+
+.contactformulier {
+  width: 500px;
+  max-width: 97%;
+  margin: 2rem auto;
+  border: none;
+  padding: 2rem;
+  z-index: 2;
+  box-shadow: rgb(0 0 0 / 5%) 0px 0px 20px 0px ;
+}
+
+label {
+  display: block;
+  padding: 1rem 0 0.5rem;
+  color: var(--clr-rood);
+  font-weight: bold;
+  font-size: 1.175rem;
+}
+
+input {
+  display: block;
+  width: 100%;
+  border: none;
+  padding-bottom: 5px;
+  border-bottom: solid 2px var(--clr-rood);
+}
+
+textarea {
+  width: 100%;
+  height: 75px;
+  border: none;
+  border-bottom: solid var(--clr-rood);
+}
+
+::placeholder {
+  color:var(--clr-grijs);
+  opacity: 0.4
+}
+
+#vrzdknop {
+  border: 0;
+  background-color: var(--clr-rood);
+  padding: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  color: white;
+  margin-top: 1rem;
+  width: auto;
+  font-weight: bold;
+  font-size: 1rem;
+  border-radius: 5px;
+}
+
+#vrzdknop:hover {
+  background-color: var(--clr-rood-hover);
+  cursor: pointer;
+}
+
+.gegevens {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.naam-mail {
+  display: flex;
+  justify-content: space-between;
+}
+
+.erv-container {
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  
+}
+.ervaring {
+width: 500px;
+padding: 20px;
+}
+
+.erv-p, .erv-p-lijn{
+  padding: 25px;
+  position: relative;
+  font-size: 1rem;
+}
+
+.erv-p-lijn::after {
+  content: "";
+  position: absolute;
+  background-color:var(--clr-rood);
+  height: 43px;
+  width: 7px;
+  left: 50%;
+  right: 50%;
+  top: 80%;
+  box-shadow: rgb(0 0 0 /15%)  5px  0px  10px 5px;
+  border-radius: 5px;
+}
+
+
+.hobby {
+  height: 400px;
+  margin: 50px;
+  box-shadow: 5px 5px 20px black;
+  overflow: hidden;
+}
+
+.h-container {
+display: flex;
+}
+
+.hobby-img  {
+height:  400px;
+width: 300px;
+border-radius: 3px;
+transition: .5s;
+}
+
+.intro {
+height: 70px;
+width: 300px;
+padding: 6px;
+box-sizing: border-box;
+position: absolute;
+background: rgb(27 , 27, 27, .5);
+color: white;
+bottom: 10px;
+transition: .5s;
+}
+
+h2 {
+margin: 10px;
+font-size: 40px;
+}
+
+.h-tekst{
+font-size: 20px;
+margin:20px;
+
+opacity: 0;
+}
+
+.hobby:hover{
+cursor: pointer;
+}
+
+.hobby:hover .intro {
+height: 280px;
+bottom: 10px;
+background: black;
+width: 300px;
+}
+
+.hobby:hover .h-tekst {
+opacity: 1;
+visibility: visible;
+background-color: black;
+width: 100%;
+}
+
+.hobby:hover .hobby-img {
+transform: scale(1.1) rotate(-3deg);
+}
+
+
+
+
+
+
